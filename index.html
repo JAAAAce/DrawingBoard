@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="palette">
+        <input id='color' type="color">
+        <div class="color-option" style="background-color: #EA2027;" data-color="#EA2027"></div>
+        <div class="color-option" style="background-color: #EE5A24;" data-color="#EE5A24"></div>
+        <div class="color-option" style="background-color: #F79F1F;" data-color="#F79F1F"></div>
+        <div class="color-option" style="background-color: #FFC312;" data-color="#FFC312"></div>
+        <div class="color-option" style="background-color: #C4E538;" data-color="#C4E538"></div>
+        <div class="color-option" style="background-color: #009432;" data-color="#009432"></div>
+        <div class="color-option" style="background-color: #12CBC4;" data-color="#12CBC4"></div>
+        <div class="color-option" style="background-color: #1289A7;" data-color="#1289A7"></div>
+        <div class="color-option" style="background-color: #0652DD;" data-color="#0652DD"></div>
+        <div class="color-option" style="background-color: #1B1464;" data-color="#1B1464"></div>
+        <div class="color-option" style="background-color: #FDA7DF;" data-color="#FDA7DF"></div>
+        <div class="color-option" style="background-color: #9980FA;" data-color="#9980FA"></div>
+        <div class="color-option" style="background-color: #5758BB;" data-color="#5758BB"></div>
+        <div class="color-option" style="background-color: #ED4C67;" data-color="#ED4C67"></div>
+        <div class="color-option" style="background-color: #B53471;" data-color="#B53471"></div>
+        <div class="color-option" style="background-color: #833471;" data-color="#833471"></div>
+        <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+        <div class="color-option" style="background-color: #ffffff;" data-color="#ffffff"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+        <input id='line-width' type="range" min="1" max="10" value="5" step=".2">
+        <button id="mode-btn">채우기 모드</button>
+        <button id="reset-btn">리셋</button>
+        <button id="eraser-btn">지우개</button>
+        <label for="file">
+            사진 불러오기
+            <input id='file' type="file" accept="image/*">
+        </label>
+        <input id="text" type="text" placeholder="텍스트 입력 후 더블클릭">
+        <button id="save">이미지 저장</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import url(reset.css);
+
+$blue: #32bcba;
+$deepblue: #62c6c8;
+$lavender: #C5C1FF;
+$deeplavender: #a09be8;
+$pink: #FFBAC3;
+$deeppink: #ec98a4;
+$white: #FFF;
+
+body{display: flex; justify-content: center; align-items: center; gap: 20px; background-image: linear-gradient(10deg, $blue 0%, $lavender 56%, $pink 100%); height: 100vh; padding: 20px; box-sizing: border-box; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .palette{display: flex; align-items: center; flex-direction: column; gap: 2px;
+        #color{margin-bottom: 5px; width: 36px;}
+        .color-option{width: 35px; height: 35px; cursor: pointer; transition: transform ease-in-out .3s;
+            &:hover{transform: scale(1.1);}
+        }
+    }
+    canvas{width: 700px; height: 700px; background: $white; border-radius: 10px;}
+    .btns{display: flex; flex-direction: column; gap: 8px; width: 200px;
+        #line-width{accent-color: $pink; margin-bottom: 10px;}
+        button{all: unset; padding: 13px 0; text-align: center; background: $deepblue; color: $white; font-weight: 500; letter-spacing: -1px; cursor: pointer; border-radius: 10px; transition: .3s;
+            &#mode-btn{background: $deeppink; margin-bottom: 20px;}
+            &#mode-btn:hover{background: $pink;}
+            &:hover{background: $blue;}
+            &:last-child{margin-top: 20px; padding: 20px 0; background: $deeplavender;}
+            &:last-child:hover{background: $lavender;}
+        }
+        label{all: unset; padding: 13px 0; text-align: center; background: $deepblue; color: $white; font-weight: 500; letter-spacing: -1px; cursor: pointer; border-radius: 10px; transition: .3s;
+            &:hover{background: $blue;}
+            #file{display: none;}
+        }
+        #text{all: unset; padding: 13px 0; text-align: center; background: $white; font-weight: 500; letter-spacing: -1px; border-radius: 10px;}
+    }
+}
